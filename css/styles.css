@@ -299,19 +299,19 @@ li.customers-element {
     flex-basis: calc((100% - var(--card-set-gap)*5) / 6);
     display: flex;
     justify-content: center;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-}
-svg.one-customer:hover
-{
-    fill: #404BBF
 }
 
-li.customers-element:hover,li.customers-element:focus
+
+.customers-element-link:hover,.customers-element-link:focus
 {
     border: 1px solid #404BBF;
+    fill: #404BBF
 }
+.customers-element-link:hover svg,
+.customers-element-link:focus svg {
 
+    fill: #404BBF
+}
 
 .customers-element-link {
     height: 88px;
@@ -319,6 +319,9 @@ li.customers-element:hover,li.customers-element:focus
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    fill: currentColor;
 }
 
 svg.one-customer {
